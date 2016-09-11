@@ -1,0 +1,7 @@
+input string>>
+input string is "sample"
+input string>>
+input string is "simple"
+input string>>
+input string is "apple"
+input string>>

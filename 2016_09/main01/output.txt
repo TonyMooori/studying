@@ -1,0 +1,3 @@
+argv[0] is main
+argv[1] is a
+argv[2] is b

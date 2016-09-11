@@ -1,0 +1,6 @@
+*(str+0) = A
+*(str+1) = B
+*(str+2) = C
+str[0] = A
+str[1] = B
+str[2] = C

@@ -1,0 +1,6 @@
+"ABC"[0] = A
+"ABC"[1] = B
+"ABC"[2] = C
+0["ABC"] = A
+1["ABC"] = B
+2["ABC"] = C

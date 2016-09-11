@@ -1,0 +1,7 @@
+What's your name? .... 
+How old are you? .... 
+How tall are you? .... (cm)
+How weight are you? .... (kg)
+
+The profile of Tony(20 year-old)!!!
+tall is 180.0cm, weight is  65.0kg, BMI is 20.1

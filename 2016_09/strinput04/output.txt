@@ -1,0 +1,9 @@
+input string>>
+input string is "up"
+input string>>
+input string is "down"
+input string>>
+input string is "left"
+input string>>
+input string is "right"
+input string>>
