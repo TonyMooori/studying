@@ -1,0 +1,64 @@
+1:      input data
+2:      output data
+other:  end
+
+input data number(0-9)input name >>
+input telephone number >>
+
+1:      input data
+2:      output data
+other:  end
+
+input data number(0-9)input name >>
+input telephone number >>
+
+1:      input data
+2:      output data
+other:  end
+
+**************
+name    :
+tel     :
+**************
+**************
+name    :
+tel     :
+**************
+**************
+name    :
+tel     :
+**************
+**************
+name    :
+tel     :
+**************
+**************
+name    :Jiro
+tel     :111-000
+**************
+**************
+name    :Taro
+tel     :000-111
+**************
+**************
+name    :
+tel     :
+**************
+**************
+name    :
+tel     :
+**************
+**************
+name    :
+tel     :
+**************
+**************
+name    :
+tel     :
+**************
+
+1:      input data
+2:      output data
+other:  end
+
+

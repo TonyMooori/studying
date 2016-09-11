@@ -1,0 +1,3 @@
+The age of Taro is 20
+The age of Jiro is 21
+The age of Saburo is 22

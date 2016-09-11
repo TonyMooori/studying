@@ -1,0 +1,2 @@
+The student name is Taro Yamada.
+The student age is 16.

@@ -1,0 +1,11 @@
+input name >>
+input age >>
+input height(cm) >>
+input weight(kg) >>
+*******************
+name:       Taro
+age:        20
+height:     180.000000
+weight      60.000000
+bmi         18.518519
+*******************

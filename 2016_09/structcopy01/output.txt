@@ -1,0 +1,34 @@
+name:           Tanaka
+japanese:       64
+mathematics:    47
+english:        63
+sum:            174
+
+name:           Sato
+japanese:       56
+mathematics:    81
+english:        75
+sum:            212
+
+name:           Suzuki
+japanese:       47
+mathematics:    46
+english:        48
+sum:            141
+
+name:           Ota
+japanese:       45
+mathematics:    73
+english:        31
+sum:            149
+
+name:           Kato
+japanese:       82
+mathematics:    41
+english:        51
+sum:            174
+
+***********************
+japanese:       294
+mathematics:    288
+english:        268

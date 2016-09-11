@@ -1,0 +1,21 @@
+1:      input data
+2:      output data
+other:  end
+
+input name >>
+input telephone number >>
+
+1:      input data
+2:      output data
+other:  end
+
+**************
+name    :Taro
+tel     :0000-0000
+**************
+
+1:      input data
+2:      output data
+other:  end
+
+
