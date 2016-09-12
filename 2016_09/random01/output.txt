@@ -1,0 +1,11 @@
+Input the line number to read the line. (1-16)
+>> --**
+Input the line number to read the line. (1-16)
+>> -*-*
+Input the line number to read the line. (1-16)
+>> **-*
+Input the line number to read the line. (1-16)
+>> **--
+Input the line number to read the line. (1-16)
+>> -***
+Input the line number to read the line. (1-16)

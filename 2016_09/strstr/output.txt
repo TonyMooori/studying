@@ -1,0 +1,5 @@
+input string 1 >> 
+string 1 is hello everyone.
+input string 2 >> 
+string 2 is every
+everyone.

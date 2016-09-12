@@ -1,0 +1,6 @@
+Tanaka	100m running	1rank
+Sato	100m running	2rank
+Kato	100m running	3rank
+Yamada	200m running	10.000000sec
+Suzuki	200m running	15.000000sec
+Ota	200m running	8.500000sec

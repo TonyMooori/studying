@@ -1,0 +1,8 @@
+select mode >>
+1: addition
+2: subtraction
+3: multiplication
+4: division
+input value 1
+input value 2
+ans = 15.000000
