@@ -3,6 +3,7 @@ public class RK4 {
     this.model = model;
   }
 
+  // 状態変数をxとして，tからdtに変化した場合にxはどうなるかを計算するやつ
   Mat step(Mat x, float t, float dt, Mat u) throws Exception {
     Mat k1 = MatOp.sprod(dt, model.dxdt(x, t, u));
     Mat k2 = MatOp.sprod(dt, model.dxdt(MatOp.add(x, MatOp.sprod(0.5f, k1)), t+0.5f*dt, u));

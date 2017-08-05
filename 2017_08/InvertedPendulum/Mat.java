@@ -30,14 +30,3 @@ class Mat {
   public int ncol;
   public float[][] data;
 }
-//Mat A=new Mat(2, 2);
-//  A.data[0][0]=1;
-//  A.data[1][0]=2;
-//  A.data[0][1]=3;
-//  A.data[1][1]=4;
-//  try {
-//    Mat Ai = MatOp.Inverse(A, false);
-//    disp(MatOp.mprod(Ai, A));
-//  }
-//  catch(Exception e) {
-//  }

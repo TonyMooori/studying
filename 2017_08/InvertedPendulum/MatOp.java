@@ -1,5 +1,14 @@
 import java.lang.Exception;
 
+// mprod   : 行列の掛け算
+// sprod   : 行列xスカラーの掛け算
+// hprod   : アダマール積
+// add     : 行列の要素ごとの足し算
+// sub     : 行列の要素ごとの引き算
+// LUdecomp: 行列をLU分解するやつ．正則でもできない場合がある
+// LUSolve : 連立方程式とくやつ
+// Inverse : 逆行列
+
 public class MatOp {
   public static Mat mprod(Mat A, Mat B) throws Exception {
     Mat ret = new Mat(A.nrow, B.ncol);

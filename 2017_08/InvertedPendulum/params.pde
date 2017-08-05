@@ -16,7 +16,7 @@ Mat K_mat=new Mat(1, 4);
 Mat G_mat=new Mat(4, 2);
 
 void set_params() {
-
+  // A
   A_mat.data[0][0]=0;
   A_mat.data[0][1]=detT;
   A_mat.data[0][2]=0;
@@ -37,21 +37,31 @@ void set_params() {
   A_mat.data[3][2]=m*g*l*(M+m);
   A_mat.data[3][3]=-C_dump*(M+m);
 
+  A_mat = MatOp.sprod(A_mat, 1/detT);
+
+  // B
   B_mat.data[0][0] = 0;
   B_mat.data[1][0] = J+m*l*l;
   B_mat.data[2][0] = 0;
   B_mat.data[3][0] = -m*l;
+
+  B_mat = MatOp.sprod(B_mat, 1/detT);
+
 
   // 1,0,0,0
   // 0,0,1,0
   C_mat.data[0][0] = 1;
   C_mat.data[1][2] = 1;
 
-//  K_mat.data[0][0] =  214.96140116;
-//  K_mat.data[0][1] = 301.8212799;
-//  K_mat.data[0][2] = 2338.14612155;
-//  K_mat.data[0][3] = 1467.66214847;
+  // K
+  // パラメータを変えたら計算し直さないといけない
+  K_mat.data[0][0] = 0.25795368;
+  K_mat.data[0][1] = 7.08877443;
+  K_mat.data[0][2] = 111.92378883;
+  K_mat.data[0][3] = 69.38212657;
 
+  // G
+  // パラメータを変えたら計算し直さないといけない
   G_mat.data[0][0] =9.7398596;
   G_mat.data[0][1]= 0.30567864;
 
@@ -63,18 +73,4 @@ void set_params() {
 
   G_mat.data[3][0] = 6.87245941;
   G_mat.data[3][1]=15.09833317;
-
-
-
-  G_mat.data[0][0] =  42.10823209;
-  G_mat.data[0][1] = 8.72822737;
-
-  G_mat.data[1][0] =420.62133365;
-  G_mat.data[1][1] =165.24630059;
-
-  G_mat.data[2][0] =8.72822737;
-  G_mat.data[2][1] =28.59308639;
-
-  G_mat.data[3][0] =153.7915084;
-  G_mat.data[3][1] =102.53604218;
 }

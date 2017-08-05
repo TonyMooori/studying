@@ -1,4 +1,4 @@
-
+// 制御対象のシミュレーション(非線形方程式)
 RK4 sim = new RK4(
   new SimulationModel() {
   @Override
@@ -12,7 +12,7 @@ RK4 sim = new RK4(
     Mat T = new Mat(2, 2);
     Mat temp= new Mat(2, 1);
 
-
+    // 数式をそのまま落とし込んだだけ
     temp.data[0][0] = m*l*omega*omega*sin(theta)-B_dump*v+u.data[0][0];
     temp.data[1][0] = m*l*g*sin(theta)-C_dump*omega;
 
