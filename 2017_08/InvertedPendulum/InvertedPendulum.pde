@@ -37,7 +37,7 @@ void draw() {
   rect(x*100-40, -25, 80, 50);
   line(x*100, 0, x*100+100*sin(theta), -100*cos(theta));
   
-  saveFrame("./frames/####.png");
+  //saveFrame("./frames/####.png");
 }
 
 void simulation() {
