@@ -1,0 +1,53 @@
+$date
+	Mon Sep 11 14:35:40 2017
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1s
+$end
+$scope module test $end
+$var wire 1 ! out2 $end
+$var wire 1 " out1 $end
+$var reg 1 # c $end
+$var reg 1 $ d_in $end
+$scope module ff_test $end
+$var wire 1 # clk $end
+$var wire 1 $ d $end
+$var reg 1 " q $end
+$var reg 1 ! q_bar $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0$
+0#
+x"
+x!
+$end
+#10
+1!
+0"
+1#
+#20
+0#
+#30
+0!
+1"
+1#
+1$
+#40
+0#
+#50
+1#
+#60
+0#
+#70
+1!
+0"
+1#
+0$
+#80
+0#
