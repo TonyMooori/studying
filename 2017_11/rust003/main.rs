@@ -1,0 +1,30 @@
+fn main(){
+    let v1 = vec![1,2,3];
+    let v2 = vec![2,3,4];
+
+    let answer = foo(&v1,&v2);
+
+    println!("answer = {}",answer);
+    println!("v1[0]={}",v1[0]);
+
+    let mut x = 5;
+    {   
+        let y : &mut i32 = &mut x;
+        *y += 1;
+    }
+
+    println!("{}",x);
+
+    let mut b:i32 = 5;
+    let a : &mut i32;
+    a = &mut b;
+
+    println!("{}",a);
+
+}
+
+fn foo(v1 : &Vec<i32>,v2:&Vec<i32>) -> i32{
+    v1[0] + v2[1]
+}
+
+
