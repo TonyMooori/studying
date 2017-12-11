@@ -1,56 +1,81 @@
-fn main(){
-    let suc = |x:i32| x+1;
+use std::io;
+use std::collections::HashMap;
+use std::mem;
+use std::cmp;
 
-    assert_eq!(2,suc(1));
-    let suc2 = |x:i32|{
-        suc(suc(x))
-    };
+fn read_line() -> String{
+    let mut s = String::new();
+    io::stdin().read_line(&mut s).unwrap();
+    s
+}
 
-    assert_eq!(2,suc2(0));
-   
-    let mut num = 2;
-    let add_func = |x:i32| x+num;
+fn read_ints() -> Vec<i64>{
+    let s = read_line();
+    let split:Vec<&str> = s.trim().split(" ").collect();
+    split.iter().map(|&x| x.to_string().parse().unwrap()).collect()
+}
 
-    println!("{}",add_func(1));
-
-    // num is borrowed by add_func
-    //num = 10;
-    //println!("{}",add_func(1));
-    //
-
-    let mut num = 5;
-    {
-        let mut add_num = |x:i32| num += x;
-        add_num(5);
-        // cannot print num because num is borrowed by add_num
-        // println!("{}",num);
-    }
-    println!("{}",num);
+fn f(n : &mut i64)-> Vec<i64>{
+    let mut ret = Vec::new();
     
-    let mut num = 5;
-    {
-        let mut add_num = move|x:i32|{ num +=x; num};
-        println!("{}",add_num(8));
-        println!("{}",add_num(8));
+    for i in 0..10{
+        ret.push(*n%2);
+        *n /= 2;
     }
-    println!("{}",num);
-
-    let f = |x:i32|x+1;
-    println!("{}",call_with_one1(&f));
-    println!("{}",call_with_one(f));
+    
+    ret
 }
 
-fn call_with_one<F>(some_closure: F) -> i32
-    where F:Fn(i32) -> i32{
-
-    some_closure(1)
+fn main(){
+    let arr = read_ints();
+    let (n,x) = (arr[0],arr[1]);
+    let s : String = read_line().trim().to_string();
+    let mut ans = 0;
+    
+    for i in 0..n{
+        let c = s.chars().nth(i as usize).unwrap();
+        let t = read_ints()[0];
+        if c == '0'{
+            ans += t;
+        }else{
+            ans += cmp::min(t,x);
+        }
     }
-
-fn call_with_one1<F>(some_closure: &F) -> i32
-    where F:Fn(i32) -> i32{
-
-    some_closure(1)
+    println!("{}",ans);
 }
 
 
 
+
+
+
+
+/*
+DOCS
+
+
+let mut h = HashMap::new();
+let a = 5;
+h.insert(a,true);
+match h.get(&a){
+    Some(v) => println!("{}",v),
+    None    => println!("none"),
+}
+
+
+use std::mem;
+
+let mut x = 5;
+let mut y = 1;
+mem::swap(&mut x,&mut y);
+
+
+let v = vec![0;2]; // [0,0]
+
+
+
+
+
+
+
+*/
